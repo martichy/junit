@@ -17,7 +17,6 @@ public class Person {
      * метод для задания имени
      * @param firstname имя, которое должно содержать только буквы кириллицы и начинаться с заглавной буквы
      */
-
     public void setFirstname(String firstname) {
         Matcher matcherF = WORDPATTERN.matcher(firstname);
         if (matcherF.find()) {
@@ -46,7 +45,6 @@ public class Person {
      * @param lastname фамилия, которая должна содержать в себе только буквы кириллицы и начинаться с заглавной буквы
      *                 также предусмотрен вариант двойной фамилии, в таком случае разделителем является дефис
      */
-
     public void setLastname(String lastname) {
         String[] words = lastname.trim().split("-");
         boolean error = false;
@@ -72,7 +70,6 @@ public class Person {
      * метод для получения фамилии
      * @return фамилия
      */
-
     public String getLastname() {
         return lastname;
     }
@@ -81,7 +78,6 @@ public class Person {
      * метод для задания отчества
      * @param patronymic отчество, которое должно состоять только из букв кириллицы и начинаться с заглавной буквы
      */
-
     public void setPatronymic(String patronymic) {
         Matcher matcherPatronymic = WORDPATTERN.matcher(patronymic);
         if (matcherPatronymic.find()) {
@@ -101,7 +97,6 @@ public class Person {
     /**
      * @return метод для получения отчества
      */
-
     public String getPatronymic() {
         return patronymic;
     }
@@ -110,7 +105,6 @@ public class Person {
      * метод для задания возраста
      * @param age возраст, который не может быть отрицательным и более 127
      */
-
     public void setAge(byte age) {
         if (age >= 0) {
             this.age = age;
@@ -123,7 +117,6 @@ public class Person {
      * метод для получения возраста
      * @return возраст
      */
-
     public byte getAge() {
         return age;
     }
