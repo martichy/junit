@@ -35,7 +35,6 @@ public class Person {
      * метод для получения имени
      * @return имя
      */
-
     public String getFirstname() {
         return firstname;
     }
