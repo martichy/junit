@@ -8,7 +8,6 @@ public class Calculator {
      * @param b второе сумируемое число
      * @return сумма
      */
-
     public double summarize(double a, double b) {
         a = a + b;
         return a;
@@ -20,7 +19,6 @@ public class Calculator {
      * @param subtracted вычитаемое число
      * @return разность
      */
-
     public double deduct(double reduction, double subtracted) {
         reduction = reduction - subtracted;
         return reduction;
@@ -32,7 +30,6 @@ public class Calculator {
      * @param divisor делитель
      * @return частное
      */
-
     public double divide(double divisible, double divisor) {
         if (divisor == 0) {
             divisible = 0;
@@ -49,7 +46,6 @@ public class Calculator {
      * @param divisor делитель
      * @return остаток от деления
      */
-
     public double mod(double divisible, double divisor) {
         if (divisor == 0) {
             divisible = 0;
@@ -66,7 +62,6 @@ public class Calculator {
      * @param b второй множитель
      * @return произведение
      */
-
     public double multiply(double a, double b) {
         a = a * b;
         return a;
@@ -77,7 +72,6 @@ public class Calculator {
      * @param a число, которое необходимо обратить
      * @return число, обратное a
      */
-
     public double reverseNumber(double a) {
         if (a != 0) {
             a = 1 / a;
