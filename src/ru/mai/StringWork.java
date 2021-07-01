@@ -7,7 +7,6 @@ public class StringWork {
      * @param string исходная строка
      * @return строка "заборчиком"
      */
-
     public String makePence(String string) {
         String finalString = "";
         try {
@@ -31,7 +30,6 @@ public class StringWork {
      * @param string исходная строка
      * @return отформатированная строка
      */
-
     public String startWithCapital(String string) {
         String firstLetter = "";
         String other = "";
@@ -61,7 +59,6 @@ public class StringWork {
      * @param symbol символ, который нужно выделить
      * @return отформатированная строка
      */
-
     public String upperChar(String string, char symbol) {
         string = string.toLowerCase();
         string = string.replace(Character.toLowerCase(symbol), Character.toUpperCase(symbol));
@@ -74,7 +71,6 @@ public class StringWork {
      * @param symbol символ, который нужно выделить
      * @return отформатированная строка
      */
-
     public String lowerChar(String string, char symbol) {
         string = string.toUpperCase();
         string = string.replace(Character.toUpperCase(symbol), Character.toLowerCase(symbol));
